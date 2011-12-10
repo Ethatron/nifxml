@@ -1885,7 +1885,7 @@
 
     <niobject name="NiObjectNET" abstract="1" inherit="NiObject">
         An object that can be controlled by a controller.
-        <add name="Skyrim Shader Type" type="uint" vercond="User Version >= 12" cond="BSLightingShaderProperty">Skyrim's shaders: 0=default 1=EnvMap, 2=Glow, 5=Skin, 6=Hair, 7=Unknown, 11=Ice/Parallax, 15=Eye.</add>
+        <add name="Skyrim Shader Type" type="uint" cond="BSLightingShaderProperty">Skyrim's shaders: 0=default 1=EnvMap, 2=Glow, 5=Skin, 6=Hair, 7=Unknown, 11=Ice/Parallax, 15=Eye.</add>
         <add name="Name" type="string">Name of this controllable object, used to refer to the object in .kf files.</add>
         <add name="Has Old Extra Data" type="bool" ver2="2.3">Extra data for pre-3.0 versions.</add>
         <add name="Old Extra Prop Name" cond="Has Old Extra Data" ver2="2.3" type="string">(=NiStringExtraData)</add>
