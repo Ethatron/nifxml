@@ -4475,11 +4475,13 @@
     <niobject name="BSLightingShaderProperty"  abstract="0" inherit="NiProperty">
         Bethesda-specific node, used in Skyrim to configure material/shader/texture properties.
 		<add name="Shader Type" type="uint" ver1="20.2.0.7" vercond="User Version == 12">Unknown</add>
-		<add name="Name" type="string">Object Name</add>
+    <!--
+    		<add name="Name" type="string">Object Name</add>
 		<add name="Extra Data" type="Ref" template="NiExtraData" ver1="3.0" ver2="4.2.2.0" >Extra data object index. (The first in a chain)</add>
 		<add name="Num Extra Data List" type="uint" ver1="10.0.1.0">The number of Extra Data objects referenced through the list.</add>
 		<add name="Extra Data List" type="Ref" template="NiExtraData" arr1="Num Extra Data List" ver1="10.0.1.0">List of extra data indices.</add>
 		<add name="Controller" type="Ref" template="NiTimeController" ver1="3.0">Controller object index. (The first in a chain)</add>
+    -->
         <add name="Shader Flags 1" type="SkyrimLightingShaderFlags1" vercond="User Version == 12"></add>
         <add name="Shader Flags 2" type="SkyrimLightingShaderFlags2" vercond="User Version == 12"></add>
         <add name="Texture Translation 1" type="TexCoord">Offset UVs</add>
